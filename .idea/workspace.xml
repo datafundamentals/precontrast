@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f69d717-4eeb-4ee5-b662-21aab95340cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html" afterPath="$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html" />
     </list>
     <ignored path="contrastui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +39,8 @@
       <file leaf-file-name="pre-contrast.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5714286">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.48979592">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -671,12 +671,12 @@
       <workItem from="1453308231478" duration="1006000" />
       <workItem from="1453411033876" duration="2169000" />
       <workItem from="1453835759047" duration="576000" />
-      <workItem from="1453848660035" duration="5822000" />
+      <workItem from="1453848660035" duration="6691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9573000" />
+    <option name="totallyTimeSpent" value="10442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1415" height="877" extended-state="6" />
@@ -876,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5714286">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.48979592">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
