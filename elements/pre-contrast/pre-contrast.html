@@ -1,0 +1,43 @@
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+
+<dom-module id="pre-contrast">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <h2>Vagrant instance</h2>
+        <p>You will be building a vagrant instance, which will in turn download and run the data and ui projects and run them as docker containers</p>
+        <li>
+            <ul>The JavaScript UI is deployed on Apache at Dreamhost.</ul>
+            <ul>The back end REST API is running on Rackspace Carina, a Docker Swarm service.</ul>
+        </li>
+        <h2>What is the primary technology used?</h2>
+        <p>Three primary technologies are used for the public facing tech, and a fourth for the demo code.</p>
+        <li>
+            <ul>The UI is client side JS written inside Polymer.</ul>
+            <ul>The REST API is written in Spring Data JPA, inside Spring Boot</ul>
+            <ul>The back end is deployed inside Docker using a CoreOS container</ul>
+            <ul>The demo version of this app is to be deployed inside a Vagrant instance, using all of above.</ul>
+        </li>
+        <code>blah whew fooie
+        dog cat monster
+        joe mary sue
+        end;</code>
+        <p></p>
+        <p></p>
+        <p></p>
+    </template>
+    <script>
+        (function () {
+            'use strict';
+
+            Polymer({
+                is: 'pre-contrast'
+            });
+        })();
+    </script>
+</dom-module>
