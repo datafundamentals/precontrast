@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f69d717-4eeb-4ee5-b662-21aab95340cd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/chrome-splashscreen-icon-384x384.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/chrome-touch-icon-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/icon-128x128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/ms-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/touch/ms-touch-icon-144x144-precomposed.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/polyrest-home/polyrest-home.html" afterPath="$PROJECT_DIR$/elements/polyrest-home/polyrest-home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html" afterPath="$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/to-do/to-do.html" afterPath="$PROJECT_DIR$/elements/to-do/to-do.html" />
     </list>
     <ignored path="contrastui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,8 +79,8 @@
       <file leaf-file-name="pre-contrast.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30612245">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.2857143">
+              <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -767,12 +758,12 @@
       <workItem from="1453835759047" duration="576000" />
       <workItem from="1453848660035" duration="7907000" />
       <workItem from="1453939031571" duration="396000" />
-      <workItem from="1453979840425" duration="7365000" />
+      <workItem from="1453979840425" duration="7813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19419000" />
+    <option name="totallyTimeSpent" value="19867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1415" height="877" extended-state="6" />
@@ -1046,8 +1037,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/elements/pre-contrast/pre-contrast.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30612245">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.2857143">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
           <folding />
         </state>
       </provider>
