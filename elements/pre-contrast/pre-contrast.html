@@ -9,27 +9,97 @@
                 display: block;
             }
         </style>
-        <h2>Vagrant instance</h2>
-        <p>You will be building a vagrant instance, which will in turn download and run the data and ui projects and run them as docker containers</p>
+        <h1>Video Option:</h1>
+        <p>If you'd rather not run this <strong>how to</strong> yourself, but feel like you could have, here is the video:</p>
+        <p>
+            <iframe width="455" height="255" src="https://www.youtube.com/embed/ydklb9T_8Bs" frameborder="0"
+                    allowfullscreen></iframe>
+        </p>
+        <h2>How to deploy and run this locally in a few easy commands:</h2>
+        <p>You will be building a vagrant instance, which will in turn download and run the data
+            and ui projects and run the data side as docker containers</p>
         <ul>
-            <li>The JavaScript UI is deployed on Apache at Dreamhost.</li>
-            <li>The back end REST API is running on Rackspace Carina, a Docker Swarm service.</li>
+            <li>Git clone the project</li>
+            <li>Run the Vagrant setup</li>
+            <li>ssh into Vagrant to complete the setup</li>
+            <li>Complete the docker setup</li>
+            <li>OPTIONAL: This UI, locally.</li>
         </ul>
+        <p>This work can be completed in as little as 15 minutes if your box and bandwidth is fast, and you don't stop to look at anything</p>
         <h2>Prerequisites:</h2>
         <p>The script assumes the following prerequisites</p>
         <ul>
             <li>Vagrant is intalled on the host machine</li>
             <li>Maven is installed on the host machine</li>
-            <li>blah</li>
+            <li>optionally: Python for the optional local UI</li>
         </ul>
+        <p>Let's get started!</p>
+
+        <h2>Git clone the project</h2>
+        <p>The commands below would have to be modified accordingly
+            if you elect to install this in a directory other than your user directory.
+            The two directories created will both be prefixed with <strong>'rm_pc'</strong>
+            so that you can <strong>'rm -rf ~/rm_pc*'</strong> when complete, to remove all traces of this work on your hard drive.
+        </p>
+        <p>From your user directory in your bash shell, paste in this command</p>
         <pre>
-        blah whew fooie
-        dog cat monster
-        joe mary sue
-        end;</pre>
-        <p></p>
-        <p></p>
-        <p></p>
+        git clone https://github.com/petecarapetyan/rm_pc_build.git
+        </pre>
+        <p>Or, you can get it from github, if you wish <br><img src="/images/6.58.32.png" width="600"><p>
+        <p>Like so: <br><img src="/images/6.59.45.png" width="600"><p>
+        <p>There are actually four projects on github that are consumed by this excercise, but the other three are all handled automagically by the first one.</p>
+
+        <ul>
+            <li><strong>rm_pc_build</strong> - Runs the other three</li>
+            <li><strong>contrasting</strong> - REST API source</li>
+            <li><strong>precontrast_docker_vagrant</strong> - Creates a vm to run the docker mysql and REST API</li>
+            <li><strong>precontrast</strong> - This UI (optional since you can use the web version)</li>
+        </ul>
+        <h2>Run the Vagrant setup</h2>
+        <p>Paste in this command</p>
+        <pre>
+        source ~/rm_pc_build/init.sh
+        </pre>
+        <p>This should kick off the rest of the work: <br><img src="/images/7.00.36.png" width="600"><p>
+        <h2>ssh into Vagrant to complete the setup</h2>
+        <p>Now that the vagrant is set up, run this command</p>
+        <pre>
+        vagrant ssh
+        </pre>
+        <p>This will take you into the coreos virtual machine: <br><img src="/images/7.01.52.png" width="600"><p>
+        <h2>Complete the docker setup:</h2>
+        <p>Now that you are inside the coreos vm, run this command</p>
+        <pre>
+        source work/init/start.sh
+        </pre>
+        <p>This script will run the rest of the mysql and REST API setup:
+            <br><img src="/images/7.02.40.png" width="600"><p>
+        <p>You will see docker fetching the many 'images' required: <br><img src="/images/7.03.36.png" width="600"><p>
+        <p>When it is complete, it should finish with this. I highlighted the http: link showing the rest api. <br>
+        <img src="/images/7.04.28.png" width="600"><p>
+        <h2>Try out the REST API!</h2>
+        <p>Paste this into your local browser, it should work, if docker came up correctly.</p>
+        <pre>
+        http://192.168.33.13:8121/
+        </pre>
+        <p>To wit: <br><img src="/images/7.05.38.png" width="600"><p>
+        <p>To check out the running docker containers from inside the shell, type in 'docker ps' and it will show you mysql and the REST containers both running. <br><img src="/images/7.06.55.png" width="600"><p>
+
+        <h2>OPTIONAL: This UI, locally.</h2>
+        <p>If you want to run this UI on your local machine instead of the web, cd to ~/rm_pc/precontrast and run this:</p>
+        <pre>
+        python -m SimpleHTTPServer 8080
+        </pre>
+        <p> <br><img src="/images/7.07.36.png" width="600"><p>
+        <p> <br><img src="/images/7.09.27.png" width="600"><p>
+        <p>Now you have your localhost serving up a UI. <br><img src="/images/7.09.57.png" width="600"><p>
+
+        <h2>Point your UI to your local REST</h2>
+        <p>Paste in your local REST into your local UI:</p>
+        <pre>
+        http://192.168.33.13:8121/
+        </pre>
+        <p>You are now running entirely local. <br><img src="/images/7.14.54.png" width="600"><p>
     </template>
     <script>
         (function () {

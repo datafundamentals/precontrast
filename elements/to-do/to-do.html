@@ -12,91 +12,36 @@ This code may only be used under the BSD style license found at https://github.c
             }
         </style>
         <h1>PreContrast</h1>
-        <p>PreContrast is a fork of PolyRest code, adapted to add additional functionality.</p>
-
-        <p>None of the CRUD code is specific to the tables shown, it is just generic CRUD code that walks a HATEOAS REST API</p>
-        <p>If you want to see more about PolyRest go <a
+        <p>PreContrast is a javascript UI only. It is a fork of PolyRest code, adapted to add the howto-ish stuff for PreContrast.</p>
+        <p>This is not to be confused with the rest of the demo, which is layed out in the how to section. </p>
+        <p>None of the CRUD code is specific to the tables shown, it is just generic CRUD code that walks a HATEOAS REST API<br>If you want to see more about PolyRest go <a
                 href="http://polyrest.datafundamentals.com/">here</a>.</p>
         <h2>Where is this deployed?</h2>
         <p>Public PreContrast deployment is in two places</p>
-        <li>
-            <ul>The JavaScript UI is deployed on Apache at Dreamhost.</ul>
-            <ul>The back end REST API is running on Rackspace Carina, a Docker Swarm service.</ul>
-        </li>
+        <ul>
+            <li>The JavaScript UI is deployed on Apache at Dreamhost.</li>
+            <li>The back end REST API is running on Rackspace Carina, a Docker Swarm service.</li>
+        </ul>
         <h2>What is the primary technology used?</h2>
         <p>Three primary technologies are used for the public facing tech, and a fourth for the demo code.</p>
-        <li>
-            <ul>The UI is client side JS written inside Polymer.</ul>
-            <ul>The REST API is written in Spring Data JPA, inside Spring Boot</ul>
-            <ul>The back end is deployed inside Docker using a CoreOS container</ul>
-            <ul>The demo version of this app is to be deployed inside a Vagrant instance, using all of above.</ul>
-        </li>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p>
-            <iframe width="455" height="255" src="https://www.youtube.com/embed/ydklb9T_8Bs" frameborder="0" allowfullscreen></iframe>
-        </p>
-        <p>The code for this app is <a
-                href="https://github.com/datafundamentals/polyrest">here</a> If
-            nothing else,
-            you can use some of the code as sample Polymer code for starting your own app.
-            The author is a javascript novice, so the code that you find will be very basic.</p>
-
-        <p>PolyRest is a technical proof of concept ONLY, and not intended as production code in it's
-            current (or future?) form.</p>
-        <h4>Please! Do not hold Polymer responsible for...</h4>
-
-        <p>...for the poor execution of visuals
-            on this technical POC. Polymer has great visual capabilities, the author of this POC does not. :(</p>
-
-        <h2>Pairing with Spring Data Rest and Spring Boot - back end option:</h2>
-
-        <p>Need your own data feed? Spend a day and knock out a big, pre-populated REST API set, like the <a
-                href="http://172.99.79.10:8156/">12 REST API samples</a>
-            or, the code <a
-                    href="https://bitbucket.org/datafundamentals/smoslt.data">here</a>. Yes, a day should be sufficient,
-            once
-            you learn that system. It's pretty easy, at least if you are a <em>[yawn]</em> conventional corporate java
-            developer.</p>
-
-        <p>Then use this tool for basic CRUD operations on your new API</p>
-
-        <p>You now have working CRUD for your basic data set, and you still haven't made a dent in your development
-            budget!
-            Yeah! Focus your efforts on the value-adds that really matter, not just getting the basic CRUD
-            operations working.</p>
-
-        <h1>TO DO:</h1>
-
-        <p>The TO DO list is shown below, as if there was an intent to complete it. Any assumption that this is the
-            case,
-            and that <em>'someone'</em> actually intends to do so, may be purely imaginary.</p>
         <ul>
-            <li>Search isn't coded. You can pull up the input box, but nothing happens when you search.</li>
-            <li>Add toggle on-off button to jsonString</li>
-            <li>Need more REST APIs to call from than just this one</li>
-            <li>Need to test with other apis that this was not designed for - more as a curiosity.</li>
-            <li>Need to go back and write tests for everything done so far</li>
-            <li>Add an incoming page for inputting the base url, instead of just hardcoding to one, or typing in the
-                browser
-                url.
-            </li>
-            <li>Test off-line to see what does and does not work? 12th of never, because requires https for the data
-                feeds.
-            </li>
-            <li>There is some super-cludgy form handling code in upsert that has no doubt
-                been written better in other frameworks, and needs to be brought in by someone more expert and familiar
-                with it.
-            </li>
-            <li>Hardcoded to add http:/ if given none, what if needs to add https?</li>
-            <li>.</li>
+            <li>The UI is client side JS written inside Polymer.</li>
+            <li>The REST API is written in Spring Data JPA, inside Spring Boot</li>
+            <li>The back end is deployed inside Docker using a CoreOS container</li>
+            <li>The demo version of this app is to be deployed inside a Vagrant instance, using all of above.</li>
         </ul>
-        <p>Anything like css, or prettying up this app for visual features, is not even contemplated. Pull requests
-            welcome, if anything bugs you, suc as to have the visuals suck</p>
-        <p>Pete Carapetyan created PolyRest and is solely responsible for any deficiencies which you may find. Please notify him at pete@datafundamentals.com with any commments.</p>
+        <h2>Why this choice of technologies</h2>
+        <p>Expedience is the primary motivator for choosing each of the technologies</p>
+        <ul>
+            <li>Spring Data and Spring Boot make the REST stuff super fast and easy.</li>
+            <li>PolyRest is already complete, and was a snap to fork and adapt.</li>
+            <li>Docker code is much faster and easier to write than Chef code, and has other benefits - too many to mention here.</li>
+            <li>Docker runs free right now on Carina which gives me a nice public facing demo.</li>
+            <li>My dreamhost setup (apache, not nginx) also runs at no extra charge giving me a public facing demo.</li>
+        </ul>
+        <p>In a real world scenario there are many other factors that would dictate other technology.
+            I am comfortable with Chef code, for instance. But much discussion and practicalities
+            usually precede any real world decision of this type, obviously.</p>
     </template>
     <script>
         (function () {

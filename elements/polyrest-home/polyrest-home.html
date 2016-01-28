@@ -13,7 +13,7 @@ This code may only be used under the BSD style license found at https://github.c
                 display: block;
             }
         </style>
-        <paper-input label="The REST data is here. Click the arrow for CRUD functionality:" value="{{rooturl}}"></paper-input>
+        <paper-input label="The REST data is here. Click the arrow for a basic CRUD UI:" value="{{rooturl}}"></paper-input>
         <paper-icon-button on-tap="dosomething" id="setroot" icon="send"></paper-icon-button>
 
     </template>
@@ -30,7 +30,7 @@ This code may only be used under the BSD style license found at https://github.c
                 properties: {
                     rooturl: {
                         type: String,
-                        value: 'http://172.99.79.10:8123/',
+                        value: 'http://172.99.79.10:8121/',
                         notify: true
                     }
                 },
